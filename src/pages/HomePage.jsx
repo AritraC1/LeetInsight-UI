@@ -18,7 +18,7 @@ export default function HomePage() {
 
     try {
       // debugger
-      const res = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/leetcode/${username}`);
+      const res = await axios.get(`https://leetinsight-backend.onrender.com/api/leetcode/${username}`);
       setProfile(res.data.data.matchedUser);
     } 
     catch (err) {
