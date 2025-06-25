@@ -19,7 +19,15 @@ export default function HomePage() {
     try {
       // debugger
       const res = await axios.get(`https://leetinsight-backend.onrender.com/api/leetcode/${username}`);
-      setProfile(res.data.data.matchedUser);
+
+      console.log("API response:", res.data);
+      
+      if (res.data && res.data.data && res.data.data.matchedUser) {
+        setProfile(res.data.data.matchedUser);
+      } else {
+        setError("User data not found in response.");
+        setProfile(null);
+      }
     } 
     catch (err) {
       console.error(err);
