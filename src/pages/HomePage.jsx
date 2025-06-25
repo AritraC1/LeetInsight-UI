@@ -18,6 +18,7 @@ export default function HomePage() {
 
     try {
       // debugger
+      console.log("Fetching profile for", username);
       const res = await axios.get(`https://leetinsight-backend.onrender.com/api/leetcode/${username}`);
 
       console.log("API response:", res.data);
