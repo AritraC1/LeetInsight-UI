@@ -1,12 +1,26 @@
-# React + Vite
+# LeetInsight: Leetcode Profile Card Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction
+This LeetCode Profile Card Generator is a web app that fetches LeetCode stats via GraphQL, processes them on the backend, and displays a clean, downloadable profile card for easy sharing on platforms like LinkedIn, GitHub, and portfolios.
 
-Currently, two official plugins are available:
+![Landing Page](src/assets/previews/LandingPage.png)
+![LeetcodeID Search Page](src/assets/previews/search.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Real-time LeetCode stats via GraphQL
+- Clean and responsive card design
+- Perfect for portfolios, GitHub READMEs, and LinkedIn
+- Note: Download and share functionality is not available in this version (v1). These features will be added in upcoming updates.
 
-## Expanding the ESLint configuration
+## Tech Stack
+- Frontend: React.js, TailwindCSS
+- Backend: Node.js, Express.js 
+- Data Source: LeetCode GraphQL API
+- Image Rendering: HTML-to-image (planned for future)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Usage
+- Enter your LeetCode username.
+- Click "Generate Card".
+- Wait a moment while the app fetches and processes your stats.
+- View your live LeetCode profile card.
+- (Download and share features coming soon!)
